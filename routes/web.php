@@ -7,5 +7,5 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 Route::get('/', function () {
-    return redirect('https://autoclaw-front.vercel.app');
+    return redirect(env('FRONTEND_URL'));
 });
