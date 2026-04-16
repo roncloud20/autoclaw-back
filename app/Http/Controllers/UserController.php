@@ -226,6 +226,10 @@ class UserController extends Controller
                 RateLimiter::hit($throttleKey, 60); // Increment the login attempts for this key, with a decay time of 60 seconds
                 return response()->json([
                     'message' => 'Invalid email or password.',
+                    'errors' => [
+                        'email' => [' '],
+                        'password' => ['Incorrect email address or password.'],
+                    ],
                 ], 401);
             }
 

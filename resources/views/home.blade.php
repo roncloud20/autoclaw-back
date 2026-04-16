@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to the Autoclaw App</h1>
+    <h1>Welcome to the Autoclaw App </h1>
+
 </body>
 </html>
