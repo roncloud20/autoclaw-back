@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Shop;
-use DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\Controller;
 
 class ShopController extends Controller
 {
@@ -20,7 +21,7 @@ class ShopController extends Controller
             'state' => 'required|string',
             'city' => 'required|string',
             'zipcode' => 'required|string',
-            'logo' => 'required|image|mimes:jpeg,png,svg,jpg'
+            'logo' => 'nullable|image|mimes:jpeg,png,svg,jpg'
         ]);
 
         if($validator->fails()) {
@@ -32,6 +33,7 @@ class ShopController extends Controller
 
         DB::beginTransaction();
         try {
+            $logo = null;
 
             if($request->hasFile('logo')) {
                 $logo = $request->file('logo')->store('shop_logo', 'public');
