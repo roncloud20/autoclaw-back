@@ -20,5 +20,4 @@ class Shop extends Model
         'zipcode',
         'logo',
     ];
-
 }

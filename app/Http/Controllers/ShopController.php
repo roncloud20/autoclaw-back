@@ -11,7 +11,8 @@ use App\Http\Controllers\Controller;
 class ShopController extends Controller
 {
     // create shop
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $vendor = $request->user();
 
         $validator = Validator::make($request->all(), [
@@ -24,7 +25,7 @@ class ShopController extends Controller
             'logo' => 'nullable|image|mimes:jpeg,png,svg,jpg'
         ]);
 
-        if($validator->fails()) {
+        if ($validator->fails()) {
             return response()->json([
                 'message' => 'Invalid Credentials',
                 'errors' => $validator->errors()
@@ -35,7 +36,7 @@ class ShopController extends Controller
         try {
             $logo = null;
 
-            if($request->hasFile('logo')) {
+            if ($request->hasFile('logo')) {
                 $logo = $request->file('logo')->store('shop_logo', 'public');
             }
 
@@ -55,15 +56,12 @@ class ShopController extends Controller
                 'message' => 'Shop Created Successfully',
                 'shop' => $shop,
             ], 201);
-
         } catch (\Exception $e) {
             DB::rollBack();
             return response()->json([
                 'message' => 'An error occured',
-                'errors' => $e
+                'errors' => $e->getMessage(),
             ], 500);
         }
     }
-
-
 }
