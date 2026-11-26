@@ -1,0 +1,148 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Mobil 1 Extended Performance Full Synthetic 5W-30 Engine Oil",
+        "brand": "Mobil 1",
+        "category": "Lubricants",
+        "product_image": "engine_oil",
+        "initial_price": 15000,
+        "selling_price": 12000,
+        "desc": "Full synthetic engine oil formulated to deliver up to 15,000 miles of performance and strong engine protection.",
+        "merchant": "Ahmed's Auto Parts",
+        "verified": true
+      },
+      {
+        "id": 2,
+        "name": "Bosch Premium FILTECH Air Filter",
+        "brand": "Bosch",
+        "category": "Filters",
+        "product_image": "air_filter",
+        "initial_price": 8000,
+        "selling_price": 6500,
+        "desc": "High-efficiency air filter with Bosch Filtech media for superior particle capture and improved engine airflow.",
+        "merchant": "Fatima's Motor Store",
+        "verified": false
+      },
+      {
+        "id": 3,
+        "name": "Brembo Premium Ceramic Brake Pads Set",
+        "brand": "Brembo",
+        "category": "Braking System",
+        "product_image": "brake_pads",
+        "initial_price": 25000,
+        "selling_price": 20000,
+        "desc": "Ceramic brake pads engineered for consistent stopping performance, low dust, and quieter braking.",
+        "merchant": "Hassan's Garage Supply",
+        "verified": true
+      },
+      {
+        "id": 4,
+        "name": "Michelin Pilot Sport 4 205/55R16 Tire",
+        "brand": "Michelin",
+        "category": "Tires",
+        "product_image": "tires",
+        "initial_price": 120000,
+        "selling_price": 95000,
+        "desc": "Ultra-high-performance summer tire delivering precise handling, excellent wet grip, and strong tread life.",
+        "merchant": "Super Wheels Distributor",
+        "verified": false
+      },
+      {
+        "id": 5,
+        "name": "VARTA Silver Dynamic E39 12V 100Ah Car Battery",
+        "brand": "VARTA",
+        "category": "Electrical",
+        "product_image": "car_battery",
+        "initial_price": 45000,
+        "selling_price": 38000,
+        "desc": "AGM battery offering strong starting power, long service life, and reliable performance for modern vehicles.",
+        "merchant": "Power Tech Store",
+        "verified": true
+      },
+      {
+        "id": 6,
+        "name": "NGK Iridium IX Spark Plugs Set",
+        "brand": "NGK",
+        "category": "Ignition",
+        "product_image": "spark_plugs",
+        "initial_price": 12000,
+        "selling_price": 9500,
+        "desc": "Iridium spark plugs designed for reliable ignition, extended service life, and improved fuel efficiency.",
+        "merchant": "Rapid Auto Parts",
+        "verified": false
+      },
+      {
+        "id": 7,
+        "name": "Castrol Transmax Manual 75W-90 Transmission Fluid",
+        "brand": "Castrol",
+        "category": "Lubricants",
+        "product_image": "transmission_fluid",
+        "initial_price": 18000,
+        "selling_price": 14500,
+        "desc": "Full synthetic manual transmission fluid formulated for smooth shifting and reliable gear protection.",
+        "merchant": "Professional Auto Shop",
+        "verified": true
+      },
+      {
+        "id": 8,
+        "name": "Prestone AF210 Radiator Antifreeze/Coolant",
+        "brand": "Prestone",
+        "category": "Cooling System",
+        "product_image": "radiator_coolant",
+        "initial_price": 10000,
+        "selling_price": 8000,
+        "desc": "Premixed coolant engineered to protect against freeze, boil, and corrosion in all engine cooling systems.",
+        "merchant": "Cool Automotive Solutions",
+        "verified": false
+      },
+      {
+        "id": 9,
+        "name": "Valeo 12V High Output Alternator",
+        "brand": "Valeo",
+        "category": "Electrical",
+        "product_image": "alternator",
+        "initial_price": 75000,
+        "selling_price": 62000,
+        "desc": "High-output alternator replacement for consistent electrical charging and dependable vehicle power.",
+        "merchant": "ElectroMax Distributor",
+        "verified": true
+      },
+      {
+        "id": 10,
+        "name": "Bosch 044 Electric Fuel Pump",
+        "brand": "Bosch",
+        "category": "Fuel System",
+        "product_image": "fuel_pump",
+        "initial_price": 35000,
+        "selling_price": 28000,
+        "desc": "In-tank electric fuel pump built to deliver consistent pressure and reliable performance for modern engines.",
+        "merchant": "Fuel Systems Plus",
+        "verified": false
+      },
+      {
+        "id": 11,
+        "name": "MagnaFlow 18299 Stainless Steel Performance Muffler",
+        "brand": "MagnaFlow",
+        "category": "Exhaust",
+        "product_image": "exhaust_muffler",
+        "initial_price": 55000,
+        "selling_price": 45000,
+        "desc": "Performance muffler made from stainless steel to improve exhaust flow, reduce backpressure, and resist corrosion.",
+        "merchant": "Silent Performance Store",
+        "verified": true
+      },
+      {
+        "id": 12,
+        "name": "Monroe Reflex Shock Absorbers Set",
+        "brand": "Monroe",
+        "category": "Suspension",
+        "product_image": "shock_absorbers",
+        "initial_price": 80000,
+        "selling_price": 65000,
+        "desc": "Gas-charged shock absorbers designed to improve ride comfort, handling, and control over varying road conditions.",
+        "merchant": "Smooth Ride Supplies",
+        "verified": false
+      }
+    ]
+  }

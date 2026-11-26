@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('state');
             $table->string('city');
             $table->string('zipcode')->nullable();
-            $table->string('logo');
+            $table->string('logo')->nullable();
             $table->softDeletes();
             $table->timestamps();
             // $table->index(['vendor_id', 'name', 'state', 'city', 'zipcode']);

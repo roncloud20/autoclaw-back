@@ -24,7 +24,7 @@ class UserController extends Controller
             'email' => 'required|email|unique:users',
             'phone' => 'required|string|regex:/^0[789][01]\d{8}$/|unique:users,phone',
             'password' => 'required|string|confirmed|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/',
-            'role' => 'nullable|string|in:admin,user,vendor',
+            'role' => 'nullable|string|in:user,vendor',
         ]);
 
         // Check if validation fails
@@ -85,7 +85,8 @@ class UserController extends Controller
     }
 
     // Verify a user's email
-    public function verifyEmail(Request $request){
+    public function verifyEmail(Request $request)
+    {
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
             'token' => 'required|string',
@@ -226,6 +227,10 @@ class UserController extends Controller
                 RateLimiter::hit($throttleKey, 60); // Increment the login attempts for this key, with a decay time of 60 seconds
                 return response()->json([
                     'message' => 'Invalid email or password.',
+                    'errors' => [
+                        'email' => [' '],
+                        'password' => ['Incorrect email address or password.'],
+                    ],
                 ], 401);
             }
 
@@ -243,7 +248,6 @@ class UserController extends Controller
                 'token' => $token,
                 'user' => $user,
             ], 200);
-
         } catch (\Exception $e) {
             return response()->json([
                 'message' => 'An error occurred while logging in.',
